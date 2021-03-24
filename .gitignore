@@ -4,4 +4,8 @@
 *.scss.map
 
 # Dependency directories
+<<<<<<< HEAD
 node_modules
+=======
+node_modules
+>>>>>>> ffc7dce204e4093ab53a7d6167081dee58a1cad2
