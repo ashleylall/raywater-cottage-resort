@@ -1,0 +1,23 @@
+{
+  "name": "raywater-cottage-resort",
+  "version": "1.0.0",
+  "description": "Raywater Cottage Resort.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleylall/raywater-cottage-resort.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleylall/raywater-cottage-resort/issues"
+  },
+  "homepage": "https://github.com/ashleylall/raywater-cottage-resort#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
