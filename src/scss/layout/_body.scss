@@ -1,0 +1,143 @@
+@use '../base/base';
+
+
+
+//////////
+// HERO // 
+//////////
+
+.hero {
+    position: relative;
+
+    .image-hero {
+        width: 100%;
+    }
+
+}
+
+
+
+/////////////
+// WELCOME // 
+/////////////
+
+.welcome {
+    background-color: base.$colour-primary;
+    padding: 2em;
+    
+    .logo {
+        width: 40%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .blurb {
+        margin-top: 1em;
+    }
+}
+
+
+
+//////////////
+// DISCOVER // 
+//////////////
+
+.discover {
+
+    .image-hero {
+        width: 100%;
+    }
+}
+
+
+
+///////////
+// RELAX // 
+///////////
+
+.relax {
+    // padding: 2em;
+
+    .image {
+        width: 100%;
+    }
+
+}
+
+
+
+///////////
+// ICONS // 
+///////////
+
+.icons {
+
+    background-color: base.$colour-primary;
+    padding: 2em;
+    width: 100%;
+
+
+    .icons__icon {
+        padding-bottom: .5em;
+    }
+
+    .image {
+        width: 50%;
+        display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;   
+        margin: 0 auto 
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 2em;
+        // font-weight: 700;
+    }
+
+    .blurb {
+        padding: 0 1em;
+    }
+}
+
+
+
+//////////////////
+// TESTIMONIALS // 
+//////////////////
+
+.testimonials {
+    padding: 2em;
+
+    .testimonials__review {
+        padding-bottom: 1.5em;
+    }
+
+    .testimonials__name {
+        font-size: 1.5em;
+    }
+    .testimonials__comment {
+        text-align: left;
+    }
+
+}
+
+
+
+///////////////
+// INSTAGRAM // 
+///////////////
+
+.instagram {
+
+    .instagram__layout {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 1em;
+    }
+    .instagram__image {
+        width: 100%;
+    }
+
+}

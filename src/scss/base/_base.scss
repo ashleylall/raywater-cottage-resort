@@ -8,17 +8,19 @@ $body-copy: 'Josefin Sans', sans-serif;
 .section__title {
     font-family: $heading;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
-    margin: .25em;
+    margin-bottom: .25em;
 }
 .heading {
     font-family: $heading;
+    font-weight: 700;
 }
 .body-copy {
     font-family: $body-copy;
     // text-decoration: none;
     text-align: center;
+    line-height: 140%;
 }
 
 // Colours

@@ -1,6 +1,26 @@
-@use '..base/base';
+@use '../base/base';
+
+
 
 .button {
     font-family: base.$body-copy;
     text-decoration: none;
+    color: base.$colour-dark;
+    border: base.$colour-dark 1px solid;
+    border-radius: 2em;
+    // width: 
+    align-self: center;
+    display: flex;
+}
+.button-small {
+    padding: .5em;
+    font-size: .9em;
+}
+.button-normal {
+    background-color: base.$colour-light;
+    padding: .5em 3em;
+    // border: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 4em;
 }

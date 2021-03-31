@@ -1,80 +1,32 @@
 @use 'base/base';
-// @use 'base/font';
+@use 'base/font';
+@use 'base/index';
 @use 'base/reset';
 @use 'base/typography';
 
-@use 'layout/header';
+@use 'components/button';
 
-.button {
-    font-family: base.$body-copy;
-    text-decoration: none;
-    color: base.$colour-dark;
-    border: base.$colour-dark 1px solid;
-    border-radius: 2em;
-    // width: 
-    align-self: center;
-    display: flex;
-}
-.button-small {
-    padding: .5em;
-    font-size: .9em;
-}
-.button-normal {
-    background-color: base.$colour-light;
-    padding: .5em 3em;
-    // border: none;
-    margin: 0 auto;
-    text-align: center;
-    width: 4em;
-}
+@use 'layout/header';
+@use 'layout/body';
+@use 'layout/footer';
+
+
 
 a {
-    color: base.$colour-dark;
+    // color: base.$colour-dark;
+    color: #000000;
     text-decoration: none;
 }
 
-.header {
-    background-color: base.$colour-primary;
-    display: flex;
-    padding: 1em 1.5em;
-    justify-content: space-between;
-    
-    .header__top {
-        display: flex;
-    }
-    .header__top-left {
-        display: flex;
-    }
-    .header__top-right {
-        display: flex;
-    }
-    .logo {
-        width: 30px;
-        height: 30px;
-        background-color: base.$colour-secondary;
-    }
 
-    .menu {
-        // padding: 0em;
-        // line-height: 100%;
-        // height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.hero {
-    position: relative;
-}
-.image-hero {
-    width: 100%;
-}
 
 main {
+
+    padding-top: 64px;
     // margin: 0 2em;
     .section {
-        margin-bottom: 2em;
+        // margin-bottom: 2em;
+        width: 100%;
     }
     .button-normal {
         margin: 0 auto;
@@ -83,16 +35,8 @@ main {
         // width: 5em;
         padding: .5em 4.5em;
     }
+    .blurb__cta {
+        padding: 1em 2em;
+    }
 
-    .instagram__layout {
-        display: grid;
-        grid-template-columns: auto auto;
-        margin: 1em 0;
-    }
-    .instagram__image {
-        width: 100%;
-    }
 }
-
-
-

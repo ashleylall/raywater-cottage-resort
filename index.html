@@ -15,7 +15,7 @@
     <header class="header">
         <!-- <div class="logo"><a href="#"></a></div> -->
         <!-- <div> -->
-            <span class="material-icons menu">menu</span>
+            <button class="button-menu"><span class="material-icons menu">menu</span></button>
         <!-- </div> -->
         <a class="button button-small" href="#">Book now</a>
         <!-- <div class="header__top"> -->
@@ -34,54 +34,77 @@
     <main>
         <section class="section hero">
             <img class="image-hero" src="img/hero-1.jpg" alt="Father and daughter overlooking the lake at night">
-            <h2 class="section__title">Reconnect. Recharge. Your way.</h2>
-            <div>            <a class="button button-normal" href="#">Explore</a></div>
+            <div class="blurb__cta">  
+                <h2 class="section__title">Reconnect. Recharge. Your way.</h2>          
+                <a class="button button-normal" href="#">Explore</a>
+            </div>
 
         </section>
 
         <section class="section welcome">
-            <img class="logo" src="https://picsum.photos/200" alt="Raywater Cottage Resort logo">
-            <p class="body-copy">Welcome to</p>
-            <h2 class="section__title">Raywater Cottage Resort</h2>
-            <p class="body-copy">Founded over 50 years ago on Lake Muskoka, Raywater is a summer resort that strives to offer relaxing and restful experiences for you and your family.</p>
+            <img class="logo" src="img/logo_raywater-cropped.png" alt="Raywater Cottage Resort logo">
+            <div class="blurb">
+                <p class="body-copy">Welcome to</p>
+                <h2 class="section__title">Raywater Cottage Resort</h2>
+                <p class="body-copy">Founded over 50 years ago on Lake Muskoka, Raywater is a summer resort that strives to offer relaxing and restful experiences for you and your family.</p>     
+            </div>
+
         </section>
 
         <section class="section discover">
             <img class="image-hero" src="img/hero-2.jpg" alt="">
-            <h2 class="section__title">Discover</h2>
-            <h3 class="body-copy">activities the whole family can enjoy</h3>
-            <a class="button button-normal" href="#">Explore</a>
+
+            <div class="blurb__cta">
+                <h2 class="section__title">Discover</h2>
+                <h3 class="body-copy">activities the whole family can enjoy</h3>
+                <a class="button button-normal" href="#">Explore</a>
+            </div>
+
         </section>
 
         <section class="section relax">
-            <h2 class="section__title">How do you relax?</h2>
-            <p class="body-copy">Whether you're looking for something with a view or something cozy, we're sure to have something to accommodate you.</p>
-            <a href="#">Explore</a>
+            <img class="image" src="img/relax_chairs.jpg" alt="Muskoka chairs overlooking the lake">
+            <img class="image" src="img/relax_bed.jpg" alt="Cozy bedroom">
+            <div class="blurb__cta">
+                <h2 class="section__title">How do you relax?</h2>
+                <p class="body-copy">Whether you're looking for something with a view or something cozy, we're sure to have something to accommodate you.</p>
+                <a class="button button-normal" href="#">Explore</a>
+            </div>
+
         </section>
 
         <section class="section icons">
             <!-- <h2>Something something something</h2> -->
             <div class="icons__icon">
-                <img src="https://picsum.photos/200" alt="Online booking">
-                <h2 class="heading">Online booking</h2>
-                <p class="body-copy">Planning an escape has never been easier.</p>
+                <img class="image" src="img/icon_calendar.svg" alt="Online booking">
+                <div class="blurb">
+                    <h2 class="heading">Online booking</h2>
+                    <p class="body-copy">Planning an escape has never been easier.</p>
+                </div>
             </div>
-            <div>
-                <img src="https://picsum.photos/200" alt="Personalized experience">
-                <h2 class="heading">Personalized experience</h2>
-                <p class="body-copy">Our staff are here to help you create your ideal experience.</p>
+
+            <div class="icons__icon">
+                <img class="image" src="img/icon_personalized.svg" alt="Personalized experience">
+                <div class="blurb">
+                    <h2 class="heading">Personalized experience</h2>
+                    <p class="body-copy">Our staff are here to help you create your ideal experience.</p>
+                </div>
             </div>
-            <div>
-                <img src="https://picsum.photos/200" alt="Family-friendly">
-                <h2 class="heading">Family-friendly</h2>
-                <p>Families of any shape and size are welcome.</p>
+
+            <div class="icons__icon">
+                <img class="image" src="img/icon_family.svg" alt="Family-friendly">
+                <div class="blurb">
+                    <h2 class="heading">Family-friendly</h2>
+                    <p class="body-copy">Families of any shape and size are welcome.</p>
+                </div>
             </div>
+
         </section>
 
         <section class="section testimonials">
             <h2 class="section__title">Testimonials</h2>
-            <div class="testimonials__reviewer">
-                <p class="testimonials__name">June C.</p>
+            <div class="testimonials__review">
+                <h3 class="testimonials__name heading">June C.</h3>
                 <div class="testimonials__stars">
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
@@ -89,10 +112,10 @@
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
                 </div>
-                <div class="testimonials__comment">Took enough photos to fill two scrapbooks! I came for a weekend to spend time with my 11yo daughter and we both loved it. Lots of things to do and a very restful experience.</div>
+                <div class="testimonials__comment body-copy">Took enough photos to fill two scrapbooks! I came for a weekend to spend time with my 11yo daughter and we both loved it. Lots of things to do and a very restful experience.</div>
             </div>
-            <div class="testimonials__reviewer">
-                <p class="testimonials__name">Nicholas G.</p>
+            <div class="testimonials__review">
+                <h3 class="testimonials__name heading">Nicholas G.</h3>
                 <div class="testimonials__stars">
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
@@ -100,10 +123,10 @@
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
                 </div>
-                <div class="testimonials__comment">My family of four came to celebrate my son's high school graduation, but we'll definitely be back next summer. The staff were very knowledgeable about the things we could do off the resort too.</div>
+                <div class="testimonials__comment body-copy">My family of four came to celebrate my son's high school graduation, but we'll definitely be back next summer. The staff were very knowledgeable about the things we could do off the resort too.</div>
             </div>
-            <div class="testimonials__reviewer">
-                <p class="testimonials__name">Lori A.</p>
+            <div class="testimonials__review">
+                <h3 class="testimonials__name heading">Lori A.</h3>
                 <div class="testimonials__stars">
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
@@ -111,7 +134,7 @@
                     <span class="material-icons">star</span>
                     <span class="material-icons">star</span>
                 </div>
-                <div class="testimonials__comment">Perfect place for a big family reunion! Very clean resort, delicious food. What a great way to catch up on some R&R before going back to work in the fall... didn't want to leave!</div>
+                <div class="testimonials__comment body-copy">Perfect place for a big family reunion! Very clean resort, delicious food. What a great way to catch up on some R&R before going back to work in the fall... didn't want to leave!</div>
             </div>
         </section>
 
@@ -130,50 +153,51 @@
             </div>
         </section>
 
+        <footer class="footer">
+            <section>
+                <img class="logo" src="img/logo_raywater-cropped.png" alt="Raywater Cottage Resort logo">
+                <ul class="socials">
+                    <li><a class="icon" href="#"><img src="img/socials_facebook.svg" alt=""></a></li>
+                    <li><a class="icon" href="#"><img src="img/socials_instagram.svg" alt=""></a></li>
+                    <li><a class="icon" href="#"><img src="img/socials_twitter.svg" alt=""></a></li>
+                    <li><a class="icon" href="#"><img src="img/socials_youtube.svg" alt=""></a></li>     
+                </ul>
+                <section class="footer__contact">
+                    <h2 class="section__title">Contact</h2>
+                    <p class="body-copy">1342 Ontario 11 N</p>
+                    <p class="body-copy">Kilworthy, ON P0E 1G0</p>
+                    <p class="body-copy">Toll-free: +1-800-461-0243</p>
+                    <p class="body-copy">Local: (705) 689-0660</p>
+                    <p class="body-copy"><a href="#">info@raywatercottages.com</a></p>
+                </section>
+            </section>
+    
+            <section class="footer__links">
+                <h2 class="section__title">Quick Links</h2>
+                <p class="body-copy"><a href="#">Offers</a></p>
+                <p class="body-copy"><a href="#">Book</a></p>
+                <p class="body-copy"><a href="#">Cottages</a></p>
+                <p class="body-copy"><a href="#">Things to do</a></p>
+                <p class="body-copy"><a href="#">Rates</a></p>
+                <p class="body-copy"><a href="#">Gallery</a></p>
+                <p class="body-copy"><a href="#">About</a></p>
+            </section>
+    
+            <section class="footer__legal">
+                <h2 class="section__title">Legal</h2>
+                <p class="body-copy"><a href="#">Terms of service</a></p>
+                <p class="body-copy"><a href="#">Privacy policy</a></p>
+                <p class="body-copy"><a href="#">Accessibility</a></p>
+                <p class="body-copy"><a href="#">Site map</a></p>
+            </section>
+    
+            <section class="footer__copyright">
+                <p class="body-copy">&copy; Raywater Cottage Resort, 2021</p>
+            </section>
+        </footer>
     </main>
 
-    <footer class="footer">
-        <section>
-            <img class="logo" src="https://picsum.photos/200" alt="Raywater Cottage Resort logo">
-            <ul class="socials">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </ul>
-            <section class="footer__contact">
-                <h2>Contact</h2>
-                <p>1342 Ontario 11 N</p>
-                <p>Kilworthy, ON P0E 1G0</p>
-                <p>Toll-free: +1-800-461-0243</p>
-                <p>Local: (705) 689-0660</p>
-                <p><a href="#">info@raywatercottages.com</a></p>
-            </section>
-        </section>
 
-        <section class="footer__links">
-            <h2 class="section__title">Quick Links</h2>
-            <p><a href="#">Offers</a></p>
-            <p><a href="#">Book</a></p>
-            <p><a href="#">Cottages</a></p>
-            <p><a href="#">Things to do</a></p>
-            <p><a href="#">Rates</a></p>
-            <p><a href="#">Gallery</a></p>
-            <p><a href="#">About</a></p>
-        </section>
-
-        <section class="footer__legal">
-            <p><a href="#">Terms of service</a></p>
-            <p><a href="#">Privacy policy</a></p>
-            <p><a href="#">Accessibility</a></p>
-            <p><a href="#">Site map</a></p>
-        </section>
-
-        <section class="footer__copyright">
-            <p>&copy; Raywater Cottage Resort, 2021</p>
-        </section>
-    </footer>
   
     
     <!-- <script src="js/main.js" type="text/javascript"></script> -->

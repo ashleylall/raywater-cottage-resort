@@ -1,0 +1,69 @@
+@use '../base/base';
+
+.footer {
+    background-color: base.$colour-secondary;
+    width: 100%;
+    padding: 2em;
+
+    section {
+        margin-bottom: 1.5em;
+    }
+
+    .logo {
+        width: 50%;
+        display: flex;
+        margin: 0 auto;   
+    }
+
+    .footer__copyright {
+        margin-bottom: 0;
+    }
+}
+
+.socials {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em auto;
+
+
+    .icon {
+        margin:.5em;
+        // width: 40px;
+        // height: 40px
+    }
+    img {
+        background-color: base.$colour-light;
+        width: 40px;
+        padding: .5em;
+        border-radius: 100%;
+    };
+}
+
+.footer__contact {
+    .section__title {
+        text-align: left;
+    }
+    .body-copy {
+        text-align: left;
+    }
+}
+
+.footer__links {
+    .section__title {
+        text-align: left;
+    }
+    .body-copy {
+        text-align: left;
+    } 
+}
+
+.footer__legal {
+    .section__title {
+        text-align: left;
+    }
+    .body-copy {
+        text-align: left;
+    }
+}
+
