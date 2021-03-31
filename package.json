@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "watch": "sass src/scss:public/css --watch",
-    "server" : "live-server"
+    "start" : "live-server"
     },
   "repository": {
     "type": "git",

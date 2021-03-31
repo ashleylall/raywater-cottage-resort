@@ -1,3 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700");
+.section__title {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+  margin: 0.25em;
+}
 
+.heading {
+  font-family: "Amatic SC", cursive;
+}
+
+.body-copy {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.button {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: #333333;
+  border: #333333 1px solid;
+  border-radius: 2em;
+  align-self: center;
+  display: flex;
+}
+
+.button-small {
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+.button-normal {
+  background-color: #FFFFFF;
+  padding: 0.5em 3em;
+  margin: 0 auto;
+  text-align: center;
+  width: 4em;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #DAEEF2;
+  display: flex;
+  padding: 1em 1.5em;
+  justify-content: space-between;
+}
+.header .header__top {
+  display: flex;
+}
+.header .header__top-left {
+  display: flex;
+}
+.header .header__top-right {
+  display: flex;
+}
+.header .logo {
+  width: 30px;
+  height: 30px;
+  background-color: #86BBC0;
+}
+.header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.image-hero {
+  width: 100%;
+}
+
+main .section {
+  margin-bottom: 2em;
+}
+main .button-normal {
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0.5em 4.5em;
+}
+main .instagram__layout {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 1em 0;
+}
+main .instagram__image {
+  width: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */

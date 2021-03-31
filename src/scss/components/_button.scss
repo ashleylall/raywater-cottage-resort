@@ -1,0 +1,6 @@
+@use '..base/base';
+
+.button {
+    font-family: base.$body-copy;
+    text-decoration: none;
+}
