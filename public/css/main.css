@@ -106,6 +106,16 @@ table {
   justify-content: center;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .button-long {
+    background-color: white;
+    width: 4em;
+    margin: 0;
+    padding: 0.75em 4.5em;
+    border: none;
+    font-size: 1.2em;
+  }
+}
 
 .header {
   background-color: #DAEEF2;
@@ -159,11 +169,30 @@ table {
   font-size: 1.5em;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 .hero {
   position: relative;
 }
 .hero .image-hero {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero .blurb__cta {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 3em;
+    width: 500px;
+  }
+  .hero .section__title {
+    color: #FFFFFF;
+    font-size: 4em;
+    text-align: left;
+  }
 }
 
 .welcome {
@@ -175,16 +204,57 @@ table {
   display: flex;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .welcome .logo {
+    width: 150px;
+  }
+}
 .welcome .blurb {
   margin-top: 1em;
 }
 
+.discover {
+  position: relative;
+}
 .discover .image-hero {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .discover .blurb__cta {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 3em;
+    width: 450px;
+  }
+  .discover .section__title {
+    color: #FFFFFF;
+    font-size: 4em;
+    text-align: left;
+  }
+  .discover .body-copy {
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
 }
 
 .relax .image {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .relax {
+    padding: 2em;
+  }
+  .relax .image {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .relax .button-long {
+    border: #333333 1px solid;
+    margin: 0 auto;
+  }
 }
 
 .icons {
@@ -192,11 +262,14 @@ table {
   padding: 2em;
   width: 100%;
 }
+.icons .icons__all {
+  margin: 0 auto;
+}
 .icons .icons__icon {
   padding-bottom: 0.5em;
 }
 .icons .image {
-  width: 50%;
+  width: 150px;
   display: flex;
   margin: 0 auto;
 }
@@ -206,6 +279,18 @@ table {
 }
 .icons .blurb {
   padding: 0 1em;
+}
+@media screen and (min-width: 768px) {
+  .icons {
+    display: flex;
+  }
+  .icons .icons__all {
+    display: flex;
+    margin: 0 auto;
+  }
+  .icons .icons__icon {
+    width: 250px;
+  }
 }
 
 .testimonials {
@@ -229,6 +314,11 @@ table {
 .instagram .instagram__image {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .instagram .instagram__layout {
+    grid-template-columns: auto auto auto auto;
+  }
+}
 
 .footer {
   background-color: #86BBC0;
@@ -247,7 +337,6 @@ table {
 .footer .footer__copyright {
   margin-bottom: 0;
 }
-
 .socials {
   display: flex;
   align-items: center;

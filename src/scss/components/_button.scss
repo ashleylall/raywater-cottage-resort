@@ -33,4 +33,13 @@
     text-align: center;
     justify-content: center; 
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+        background-color: white;
+        width: 4em;
+        margin: 0;
+        padding: .75em 4.5em;
+        border: none;
+        font-size: 1.2em;
+    }
 }
