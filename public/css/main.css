@@ -119,9 +119,6 @@ table {
 
 .header {
   background-color: #DAEEF2;
-  display: flex;
-  padding: 1em 1.5em;
-  justify-content: space-between;
   position: fixed;
   width: 100%;
   height: 64px;
@@ -130,12 +127,13 @@ table {
 }
 .header .header__top {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em 1.5em;
+  position: relative;
 }
-.header .header__top-left {
-  display: flex;
-}
-.header .header__top-right {
-  display: flex;
+.header .logo {
+  width: 30px;
 }
 .header .button-menu {
   background-color: transparent;
@@ -169,10 +167,41 @@ table {
   font-size: 1.5em;
 }
 
+@media screen and (min-width: 1024px) {
+  .button-menu {
+    display: none;
+  }
+
+  .header__bottom {
+    background-color: #86BBC0;
+    display: flex;
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  ul {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  ul li {
+    padding: 0 2em;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 500px;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 700px;
   }
 }
 .hero {
@@ -192,6 +221,12 @@ table {
     color: #FFFFFF;
     font-size: 4em;
     text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero .image-hero {
+    height: 100vh;
+    object-fit: cover;
   }
 }
 
@@ -305,6 +340,11 @@ table {
 .testimonials .testimonials__comment {
   text-align: left;
 }
+@media screen and (min-width: 768px) {
+  .testimonials .testimonials__all {
+    display: flex;
+  }
+}
 
 .instagram .instagram__layout {
   display: grid;
@@ -337,6 +377,7 @@ table {
 .footer .footer__copyright {
   margin-bottom: 0;
 }
+
 .socials {
   display: flex;
   align-items: center;
