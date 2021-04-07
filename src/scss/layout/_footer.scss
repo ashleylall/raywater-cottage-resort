@@ -7,6 +7,7 @@
 
     section {
         margin-bottom: 1.5em;
+        text-align: center;
     }
 
     .logo {
@@ -40,30 +41,15 @@
     };
 }
 
-.footer__contact {
-    .section__title {
-        text-align: left;
-    }
-    .body-copy {
-        text-align: left;
-    }
-}
+// .footer__contact {
+//     text-align: center; 
+// }
 
-.footer__links {
-    .section__title {
-        text-align: left;
-    }
-    .body-copy {
-        text-align: left;
-    } 
-}
+// .footer__links {
+//     text-align: center;
+// }
 
-.footer__legal {
-    .section__title {
-        text-align: left;
-    }
-    .body-copy {
-        text-align: left;
-    }
-}
+// .footer__legal {
+//     text-align: center;
+// }
 

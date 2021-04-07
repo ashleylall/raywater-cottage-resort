@@ -8,8 +8,14 @@ var menuOpened = Boolean(false);
 
 // Toggle menu open/close
 menuButton.addEventListener('click', function(event) {
-    // console.log(`clicked`);
+    console.log(`clicked`);
+
     nav.classList.toggle(`menu__opened`);
+    // menuOpened = true;
+    // switchMenuIcon();
 
 })
+
+
+
 

@@ -17,6 +17,7 @@
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   line-height: 140%;
+  margin: 0.5em 0;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -95,6 +96,15 @@ table {
   margin: 0 auto;
   text-align: center;
   width: 4em;
+}
+
+.button-long {
+  background-color: #FFFFFF;
+  padding: 0.5em 3em;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .header {
@@ -227,6 +237,7 @@ table {
 }
 .footer section {
   margin-bottom: 1.5em;
+  text-align: center;
 }
 .footer .logo {
   width: 50%;
@@ -251,27 +262,6 @@ table {
   width: 40px;
   padding: 0.5em;
   border-radius: 100%;
-}
-
-.footer__contact .section__title {
-  text-align: left;
-}
-.footer__contact .body-copy {
-  text-align: left;
-}
-
-.footer__links .section__title {
-  text-align: left;
-}
-.footer__links .body-copy {
-  text-align: left;
-}
-
-.footer__legal .section__title {
-  text-align: left;
-}
-.footer__legal .body-copy {
-  text-align: left;
 }
 
 a {
