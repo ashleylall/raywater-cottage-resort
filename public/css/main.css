@@ -301,12 +301,13 @@ table {
   margin: 0 auto;
 }
 .icons .icons__icon {
-  padding-bottom: 0.5em;
+  margin-bottom: 2.5em;
 }
 .icons .image {
   width: 150px;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 1em;
 }
 .icons .heading {
   text-align: center;
@@ -324,7 +325,13 @@ table {
     margin: 0 auto;
   }
   .icons .icons__icon {
-    width: 250px;
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .icons .icons__icon {
+    max-width: 300px;
   }
 }
 
