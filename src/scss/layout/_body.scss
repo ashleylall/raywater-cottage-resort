@@ -3,14 +3,14 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 500px;
+        max-width: 700px;
         margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .container {
-        max-width: 700px;
+        max-width: 900px;
     }
 }
 
@@ -29,7 +29,7 @@
         .blurb__cta {
             position: absolute;
             bottom: 0;
-            padding-bottom: 3em;
+            margin-bottom: 1.5em;
             width: 500px;
         }
 
@@ -46,6 +46,11 @@
             height: 100vh;
             object-fit: cover;
         }
+
+        .blurb__cta {
+            margin-left: 2em;
+            margin-bottom: 3em;
+        }
     }
 }
 
@@ -57,7 +62,11 @@
 
 .welcome {
     background-color: base.$colour-primary;
-    padding: 2em;
+    padding: 3em 2em;
+
+    @media screen and (min-width: 768px) {
+        padding: 5em;
+    }
 
     .logo {
         width: 40%;
@@ -108,6 +117,13 @@
             color: base.$colour-light;
             font-size: 1.3em;
             margin-bottom: 1em;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .blurb__cta {
+            margin-left: 2em;
+            margin-bottom: 3em;
         }
     }
 }
@@ -187,6 +203,8 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
+        padding: 5em;
+
 
         .icons__all {
             display: flex;
@@ -225,7 +243,8 @@
     padding: 2em;
 
     .testimonials__review {
-        padding-bottom: 1.5em;
+        // padding-bottom: 1.5em;
+        margin-bottom: 2.5em;
     }
 
     .testimonials__name {
@@ -237,8 +256,36 @@
 
 
     @media screen and (min-width: 768px) {
+        padding: 5em;
+
         .testimonials__all {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .testimonials__review {
+            // margin: 0 2.5em;
+            max-width: 450px;
+            margin-bottom: 2.5em;
+
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 5em;
+
+        .testimonials__all {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .testimonials__review {
+            margin: 1em;
+            max-width: 600px;
+
+
         }
     }
 }

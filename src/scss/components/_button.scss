@@ -25,6 +25,10 @@
     width: 4em;
 }
 
+.button-outline {
+    border: base.$colour-light 2px solid;
+    color: base.$colour-light;
+}
 .button-long {
     background-color: base.$colour-light;
     padding: .5em 3em;

@@ -1,13 +1,13 @@
 @use '../base/base';
 
 .header {
-    background-color: base.$colour-primary;
+    background-color: rgba(base.$colour-dark,.7);
     display: flex;
-    padding: .75em 1.5em;
+    padding: 1em 2em;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 64px;
+    height: 75px;
     z-index: 9000;
     box-shadow: 0px 0px 7px 0px base.$colour-dark;
 
@@ -27,6 +27,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: base.$colour-light;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 90px;
     }
 
 }
@@ -37,12 +42,12 @@
 
 .menu__opened {
     display: block;
-    background-color: base.$colour-secondary;
+    background-color: rgba(base.$colour-dark,.7);
     position: absolute;
     width: 100vw;
     height: 100vh;
     // z-index: 9999;
-    top: 64px;
+    top: 75px;
     left: 0;
 
     ul {
@@ -59,6 +64,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+
     .button-menu {
         display: none;
     }
@@ -67,15 +73,24 @@
         width: auto;
         flex-direction: row;
     }
-    ul {
+    
+    .nav ul {
         display: flex;
         margin: 0 auto;
     }
-    ul li {
+    .nav ul li {
         padding: 0 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    ul li a:hover {
+    .nav ul li a {
+        color: base.$colour-light;
+        font-size: 1.25em;
+    }
+
+    .nav ul li a:hover {
         color: base.$colour-secondary;
     }
  

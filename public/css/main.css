@@ -98,6 +98,11 @@ table {
   width: 4em;
 }
 
+.button-outline {
+  border: #FFFFFF 2px solid;
+  color: #FFFFFF;
+}
+
 .button-long {
   background-color: #FFFFFF;
   padding: 0.5em 3em;
@@ -118,13 +123,13 @@ table {
 }
 
 .header {
-  background-color: #DAEEF2;
+  background-color: rgba(51, 51, 51, 0.7);
   display: flex;
-  padding: 0.75em 1.5em;
+  padding: 1em 2em;
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  height: 64px;
+  height: 75px;
   z-index: 9000;
   box-shadow: 0px 0px 7px 0px #333333;
 }
@@ -139,6 +144,12 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 90px;
+  }
 }
 
 .menu__closed {
@@ -147,11 +158,11 @@ table {
 
 .menu__opened {
   display: block;
-  background-color: #86BBC0;
+  background-color: rgba(51, 51, 51, 0.7);
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 64px;
+  top: 75px;
   left: 0;
 }
 .menu__opened ul {
@@ -177,16 +188,24 @@ table {
     flex-direction: row;
   }
 
-  ul {
+  .nav ul {
     display: flex;
     margin: 0 auto;
   }
 
-  ul li {
+  .nav ul li {
     padding: 0 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  ul li a:hover {
+  .nav ul li a {
+    color: #FFFFFF;
+    font-size: 1.25em;
+  }
+
+  .nav ul li a:hover {
     color: #86BBC0;
   }
 
@@ -197,13 +216,13 @@ table {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 700px;
+    max-width: 900px;
   }
 }
 .hero {
@@ -216,7 +235,7 @@ table {
   .hero .blurb__cta {
     position: absolute;
     bottom: 0;
-    padding-bottom: 3em;
+    margin-bottom: 1.5em;
     width: 500px;
   }
   .hero .section__title {
@@ -230,11 +249,20 @@ table {
     height: 100vh;
     object-fit: cover;
   }
+  .hero .blurb__cta {
+    margin-left: 2em;
+    margin-bottom: 3em;
+  }
 }
 
 .welcome {
   background-color: #DAEEF2;
-  padding: 2em;
+  padding: 3em 2em;
+}
+@media screen and (min-width: 768px) {
+  .welcome {
+    padding: 5em;
+  }
 }
 .welcome .logo {
   width: 40%;
@@ -273,6 +301,12 @@ table {
     color: #FFFFFF;
     font-size: 1.3em;
     margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .discover .blurb__cta {
+    margin-left: 2em;
+    margin-bottom: 3em;
   }
 }
 
@@ -321,6 +355,7 @@ table {
 @media screen and (min-width: 768px) {
   .icons {
     display: flex;
+    padding: 5em;
   }
   .icons .icons__all {
     display: flex;
@@ -341,7 +376,7 @@ table {
   padding: 2em;
 }
 .testimonials .testimonials__review {
-  padding-bottom: 1.5em;
+  margin-bottom: 2.5em;
 }
 .testimonials .testimonials__name {
   font-size: 1.5em;
@@ -350,8 +385,32 @@ table {
   text-align: left;
 }
 @media screen and (min-width: 768px) {
+  .testimonials {
+    padding: 5em;
+  }
   .testimonials .testimonials__all {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .testimonials .testimonials__review {
+    max-width: 450px;
+    margin-bottom: 2.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .testimonials {
+    padding: 5em;
+  }
+  .testimonials .testimonials__all {
+    display: flex;
+    flex-direction: row;
+  }
+  .testimonials .testimonials__review {
+    margin: 1em;
+    max-width: 600px;
   }
 }
 
@@ -373,6 +432,8 @@ table {
   background-color: #86BBC0;
   width: 100%;
   padding: 2em;
+  padding-bottom: 0;
+  justify-content: center;
 }
 .footer section {
   margin-bottom: 1.5em;
@@ -383,8 +444,27 @@ table {
   display: flex;
   margin: 0 auto;
 }
-.footer .footer__copyright {
+.footer .footer__copyright p {
   margin-bottom: 0;
+  padding: 1em 0.5em;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 5em;
+    padding-bottom: 0;
+  }
+  .footer .all-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .footer .links {
+    width: 250px;
+  }
+  .footer .logo {
+    width: 150px;
+  }
 }
 
 .socials {
@@ -402,15 +482,17 @@ table {
   padding: 0.5em;
   border-radius: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .socials ul li {
+    padding: 0;
+  }
+}
 
 a {
   color: #000000;
   text-decoration: none;
 }
 
-main {
-  padding-top: 64px;
-}
 main .section {
   width: 100%;
 }
@@ -421,6 +503,11 @@ main .button-normal {
 }
 main .blurb__cta {
   padding: 1em 2em;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding-top: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
