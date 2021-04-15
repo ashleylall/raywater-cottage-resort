@@ -119,21 +119,17 @@ table {
 
 .header {
   background-color: #DAEEF2;
+  display: flex;
+  padding: 0.75em 1.5em;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   height: 64px;
   z-index: 9000;
   box-shadow: 0px 0px 7px 0px #333333;
 }
-.header .header__top {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 1em 1.5em;
-  position: relative;
-}
 .header .logo {
-  width: 30px;
+  width: auto;
 }
 .header .button-menu {
   background-color: transparent;
@@ -151,7 +147,7 @@ table {
 
 .menu__opened {
   display: block;
-  background-color: #FFFFFF;
+  background-color: #86BBC0;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -166,21 +162,18 @@ table {
   padding: 0.75em 0;
   font-size: 1.5em;
 }
+.menu__opened ul li a {
+  color: #FFFFFF;
+}
 
 @media screen and (min-width: 1024px) {
   .button-menu {
     display: none;
   }
 
-  .header__bottom {
-    background-color: #86BBC0;
-    display: flex;
-    width: 100%;
-  }
-
   .nav {
     display: flex;
-    width: 100%;
+    width: auto;
     flex-direction: row;
   }
 
@@ -191,6 +184,15 @@ table {
 
   ul li {
     padding: 0 2em;
+  }
+
+  ul li a:hover {
+    color: #86BBC0;
+  }
+
+  .book {
+    width: auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
